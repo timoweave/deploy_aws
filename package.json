@@ -1,0 +1,17 @@
+{
+  "name": "deploy_docker2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}
