@@ -1,8 +1,11 @@
 FROM node
-EXPOSE 3000
-WORKDIR /app
+
+# EXPOSE NOTE: heroku no EXPOSE, ecs ok EXPOSE
+EXPOSE 80
+
+WORKDIR /app/
 
 COPY app.js package.json /app/
-RUN npm install
+RUN apt-get update && apt-get install -y httpie && npm install
 
 CMD ["node", "app.js"]
